@@ -5,7 +5,17 @@ if ('geolocation' in navigator) {
         document.getElementById('latitude').textContent = lat;
         const lon = position.coords.longitude;
         document.getElementById('longitude').textContent = lon;
-        console.log(position)
+        // console.log(position);
+
+        const data = { lat, lon };
+        const options = {
+            method: 'POST',
+            body: JSON.stringify(data),
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        };
+        fetch('/api', options)
     });
 } else {
     console.log('geolocation NOT available');
