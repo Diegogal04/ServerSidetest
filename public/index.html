@@ -10,7 +10,11 @@
         if ('geolocation' in navigator) {
             console.log('geolocation IS available');
             navigator.geolocation.getCurrentPosition(position => {
-                console.log(position.coords);
+                const lat = position.coords.latitude;
+                document.getElementById('latitude').textContent = lat;
+                const lon = position.coords.longitude;
+                document.getElementById('longitude').textContent = lon;
+                console.log(position)
             });
         } else {
             console.log('geolocation NOT available');
@@ -21,6 +25,14 @@
     <h1>Hellos World!</h1>
     <a href="index.html">Home</a>
     <a href="contact.html">Contact</a>
+
+    <div>
+        <h2>Location</h2>
+        <p>
+            latitude: <span id="latitude"></span>&deg;<br>
+            longitude: <span id="longitude"></span>&deg;
+        </p>
+    </div>
     
 </body>
 </html>
