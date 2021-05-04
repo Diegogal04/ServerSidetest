@@ -6,6 +6,19 @@
     <title>Server Side Code</title>
 </head>
 <body>
+    <script>
+        if ('geolocation' in navigator) {
+            console.log('geolocation IS available');
+            navigator.geolocation.getCurrentPosition(function(position) {
+                console.log(position.coords.latitude);
+                console.log(position.coords.longitude);
+            });
+        } else {
+            console.log('geolocation NOT available');
+        };
+    </script>
+
+
     <h1>Hellos World!</h1>
     <a href="index.html">Home</a>
     <a href="contact.html">Contact</a>
