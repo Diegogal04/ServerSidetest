@@ -1,3 +1,4 @@
+
 if ('geolocation' in navigator) {
     console.log('geolocation IS available');
     navigator.geolocation.getCurrentPosition(position => {
@@ -15,7 +16,9 @@ if ('geolocation' in navigator) {
                 'Content-Type': 'application/json'
             }
         };
-        fetch('/api', options)
+        fetch('/api', options).then(response => {
+            console.log(response)
+        });
     });
 } else {
     console.log('geolocation NOT available');
