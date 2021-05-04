@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Diegogal04/ServerSidetest/issues"
   },
-  "homepage": "https://github.com/Diegogal04/ServerSidetest#readme"
+  "homepage": "https://github.com/Diegogal04/ServerSidetest#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
