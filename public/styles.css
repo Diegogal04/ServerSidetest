@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(48, 48, 48);
+    font-family: sans-serif;
+}
+
+
+.header {
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    background-color: tomato;
+}
+
+nav {
+    color: white;
+}
+
+.nav-bar {
+    display: flex
+        
+}
+
+a {
+    text-decoration: none;
+}
+
+
+li {
+    margin: 15px;
+    color: white;
+    font-size: 43px;
+    list-style: none;
+}
+
+li:hover {
+    color: rgb(99, 237, 99);
+    font-size: 47px;
+}
+
+.title {
+    text-align: center;
+    color: lime;
+    font-size: 60px;
+}
+
+.intro {
+    margin: 50px;
+}
+
+.container-location {
+    display: flex;
+    justify-content: center;
+}
+
+.geo-container {
+    width: 500px;
+    height: 600px;
+    background-color: white;
+    border-radius: 17px;
+    text-align: center;
+}
+
+.geo-title {
+    margin: 19px;
+    font-size: 45px;
+}
+
+.act-location {
+    font-size: 35px;
+    margin: 25px;
+}
