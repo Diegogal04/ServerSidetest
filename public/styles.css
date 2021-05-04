@@ -19,6 +19,12 @@ body {
     border-bottom-right-radius: 30px;
 }
 
+.line-br {
+    width: 3px;
+    height: 75px;
+    background-color: black;
+}
+
 nav {
     color: white;
 }
@@ -38,6 +44,7 @@ li {
     color: white;
     font-size: 43px;
     list-style: none;
+    padding: 2px;
 }
 
 li:hover {
